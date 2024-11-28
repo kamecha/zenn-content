@@ -66,11 +66,13 @@ Set Height 600
 
 Hide
 
-Type@0ms "nvim -u NONE" Enter
-Type@0ms ":set showcmd" Enter # nvim-keycastrとか使った方が良さそう
+Type@0ms "env NVIM_APPNAME='nvim-demo' nvim" Enter
 Type@0ms "ihoge piyo poyo" Escape
 Type@0ms "opiyo poyo hoge" Escape
 Type@0ms "opoyo hoge piyo" Escape
+
+# キー入力表示
+Type@0ms ":lua require('keycastr').enable()" Enter
 
 Show
 

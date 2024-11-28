@@ -57,13 +57,31 @@
 
 Output demo.gif
 
-Require echo
+Require nvim
 
 Set Shell "bash"
 Set FontSize 32
 Set Width 1200
 Set Height 600
 
-Type "echo 'Welcome to VHS!'" Sleep 500ms  Enter
+Hide
 
-Sleep 5s
+Type@0ms "nvim -u NONE" Enter
+Type@0ms ":set showcmd" Enter # nvim-keycastrとか使った方が良さそう
+Type@0ms "ihoge piyo poyo" Escape
+Type@0ms "opiyo poyo hoge" Escape
+Type@0ms "opoyo hoge piyo" Escape
+
+Show
+
+Sleep 500ms
+
+Type "/hoge" Enter
+Sleep 200ms
+Type@200ms "cwunko" Escape
+Sleep 200ms
+Type@200ms "n."
+Sleep 200ms
+Type@200ms "n."
+
+Sleep 500ms

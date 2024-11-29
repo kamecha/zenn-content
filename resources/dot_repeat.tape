@@ -55,7 +55,7 @@
 #   Hide                            Hide the subsequent commands from the output
 #   Show                            Show the subsequent commands in the output
 
-Output demo.gif
+Output dot_repeat.gif
 
 Require nvim
 
@@ -76,11 +76,9 @@ Type@0ms ":lua require('keycastr').enable()" Enter
 
 Show
 
-Sleep 500ms
-
-Type "/hoge" Enter
+Type@200ms "/hoge" Enter@200ms
 Sleep 200ms
-Type@200ms "cwunko" Escape
+Type@300ms "cwunko" Escape
 Sleep 200ms
 Type@200ms "n."
 Sleep 200ms

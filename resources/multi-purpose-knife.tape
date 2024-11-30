@@ -75,10 +75,10 @@ Type@0ms ":lua require('keycastr').enable()" Enter
 Show
 
 # 新しいバッファの作成
-Type@200ms ":new" Enter
-Sleep 200ms
-Type@200ms ":setfi" Tab
-Type@200ms " vim" Enter
+Type@300ms ":new" Enter
+Sleep 500ms
+Type@300ms ":setfi" Tab
+Type@300ms " vim" Enter
 Sleep 800ms
 
 # 関数作成
@@ -93,14 +93,17 @@ Type@10ms "endfunction" Escape
 Sleep 800ms
 
 # 関数読み込み
-Type ":source" Enter
+Type@300ms ":sou" Tab Enter
 Sleep 800ms
 
 # 関数実行
 Ctrl+w
 Type "j"
-Type ":call Ho" Tab Enter
-Sleep 800ms
+Type@300ms ":call Ho" Tab@200ms
+Sleep 300ms
+Enter
+
+Sleep 900ms
 Ctrl+d
 Sleep 800ms
 Ctrl+d

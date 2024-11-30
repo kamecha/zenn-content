@@ -82,18 +82,21 @@ Show
 
 # 検索
 Type "/hoge" Enter
-Sleep 200ms
+Sleep 300ms
 
 # 編集
-Type@200ms "qq" # マクロ開始
-Type@200ms "cwunko" Escape
-Type@200ms "A #この行を編集したよ！" Escape
-Type@200ms "q" # マクロ終了
-Sleep 200ms
+Type@300ms "qq" # マクロ開始
+Sleep 300ms
+Type@300ms "cwunko" Escape
+Type@200ms "A"
+Type@30ms " #編集完了！"
+Escape@200ms
+Type@300ms "q" # マクロ終了
+Sleep 300ms
 
 # 繰り返し
-Type@200ms "n@q" # マクロを繰り返す
-Sleep 200ms
-Type@200ms "n@@" # 直前のマクロを繰り返す
+Type@300ms "n@q" # マクロを繰り返す
+Sleep 300ms
+Type@300ms "n@@" # 直前のマクロを繰り返す
 
-Sleep 500ms
+Sleep 900ms

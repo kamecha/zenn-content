@@ -76,7 +76,8 @@ Type@0ms ":lua require('keycastr').enable()" Enter
 Show
 
 # 式実行
-Type@200ms `"=`
+Type `"`
+Type@200ms `=`
 Sleep 500ms
 
 Type@200ms `getl` Tab
@@ -88,5 +89,5 @@ Sleep 500ms
 Type@200ms "p"
 
 
-Sleep 500ms
+Sleep 1000ms
 

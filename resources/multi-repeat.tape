@@ -81,12 +81,11 @@ Type@0ms "gg"
 
 # キー入力表示
 Type@0ms ":lua require('keycastr').enable()" Enter
-Type@0ms ":" Enter
 
 Show
 
 Type@300ms "VL"
 Sleep 200ms
-Type@200ms ":g/print/d" Enter@200ms
+Type@300ms ":g/print/d" Enter@300ms
 
-Sleep 500ms
+Sleep 800ms
